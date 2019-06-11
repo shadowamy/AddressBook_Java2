@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_text">
+        <item>欢迎下次使用，</item>
+        <item>退出登陆</item>
+    </string-array>
+</resources>

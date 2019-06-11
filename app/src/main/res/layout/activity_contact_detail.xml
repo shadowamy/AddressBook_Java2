@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="359dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="41dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/VP_back"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/VP_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="356dp"
+        android:layout_height="385dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="18dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <ImageView
+            android:id="@+id/PV_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            app:srcCompat="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/sharpedit"
+            android:textSize="24sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/detail_phone"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sharpedit"
+            android:textSize="24sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sharpedit"
+            android:textSize="24sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/change_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/updata"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="354dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="73dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/login_username"
+            android:layout_marginLeft="5dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/editText_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sharpedit"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_password"
+            android:layout_marginLeft="5dp"
+            />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sharpedit"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="356dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="123dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sharpedit"
+            android:text="@string/login_log"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sharpedit"
+            android:text="@string/login_zhuce"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="373dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="45dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/login_title"
+            android:textSize="35dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

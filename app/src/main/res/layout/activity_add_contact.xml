@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/add_background">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="359dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="38dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/add_back"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wrong" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Title_add"
+            android:textAlignment="center"
+            android:textColor="#03A9F4"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/add_enter"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="367dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <ImageView
+            android:id="@+id/add_imge"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/avatar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="336dp"
+        android:layout_height="337dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <EditText
+            android:id="@+id/add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sharpedit"
+            android:gravity="left"
+            android:hint="@string/add_name" />
+
+        <EditText
+            android:id="@+id/add_tele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sharpedit"
+            android:gravity="left"
+            android:hint="@string/add_tele" />
+
+        <EditText
+            android:id="@+id/add_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sharpedit"
+            android:gravity="left"
+            android:hint="@string/add_adress" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
